@@ -2,71 +2,7 @@
     Buttons reference<br><br>
 </a>
 
-<! style is the CSS portion>
-<style>
-    .sub_button {
-        background-color: rgb(201, 0, 0);
-        color: white;
-        border: none;
-        height: 35px;
-        width: 105px;
-        border-radius: 2px;
-        cursor: pointer;
-        margin-right: 8px;  /*margin adds space between the elements in CSS*/
-        transition: opacity 0.15s;  /*makes it so that hover transition isn't instantaneous -> more smooth*/
-    }
-
-    /*hover is a psuedo class*/
-    .sub_button:hover { /*the styling here will only apply when we hover over the button*/
-        opacity: 0.7;   /*value from 0-1*/
-    }
-
-    .sub_button:active {
-        opacity: 0.5;
-    }
-
-    .join_button {
-        background-color: white;
-        border-color: rgb(17, 112, 255);
-        border-style: solid;
-        border-width: 1px;
-        color: rgb(17, 112, 255);
-        height: 35px;
-        width: 62px;
-        border-radius: 2px;
-        cursor: pointer;
-        margin-right: 8px;
-        transition: background-color 0.15s, color 0.15s;
-    }
-
-    .join_button:hover {
-        color: white;
-        background-color: rgb(17, 112, 255);
-    }
-
-    .join_button:active {
-        opacity: 0.7;
-    }
-
-    .tweet_button {
-        background-color: rgb(18, 155, 235);
-        border: none;
-        color: white;
-        height: 35px;
-        width: 70px;
-        border-radius: 18px;
-        font-weight: bold;
-        font-size: 15px;
-        cursor: pointer;
-        transition: box-shadow 0.15s;
-    }
-    
-    .tweet_button:hover {
-        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.25);    /*box-shadow takes 4 args: horizontal, vertical, blur, color*/
-            /*rgba adds an additional arg for opacity*/
-    }
-    
-</style>
+<link rel="stylesheet" href="buttons.css">
 
 <button class="sub_button">
     SUBSCRIBE
