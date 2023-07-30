@@ -1,13 +1,16 @@
     .sub_button {
-        background-color: rgb(201, 0, 0);
+        background-color: rgb(204, 0, 0);
         color: white;
         border: none;
-        height: 35px;
-        width: 105px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 16px;
+        padding-left: 16px;
         border-radius: 2px;
         cursor: pointer;
-        margin-right: 8px;  /*margin adds space between the elements in CSS*/
+        margin-right: 12px;  /*margin adds space between the elements in CSS on the outside*/
         transition: opacity 0.15s;  /*makes it so that hover transition isn't instantaneous -> more smooth*/
+        vertical-align: top;
     }
 
     /*hover is a psuedo class*/
@@ -21,15 +24,17 @@
 
     .join_button {
         background-color: white;
-        border-color: rgb(17, 112, 255);
+        border-color: rgb(6, 95, 212);
         border-style: solid;
         border-width: 1px;
-        color: rgb(17, 112, 255);
-        height: 35px;
-        width: 62px;
+        color: rgb(6, 95, 212);
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-right: 15px;
+        padding-left: 15px;
         border-radius: 2px;
         cursor: pointer;
-        margin-right: 8px;
+        margin-right: 12px;
         transition: background-color 0.15s, color 0.15s;
     }
 
@@ -43,16 +48,19 @@
     }
 
     .tweet_button {
-        background-color: rgb(18, 155, 235);
+        background-color: rgb(29, 155, 240);
         border: none;
         color: white;
-        height: 35px;
-        width: 70px;
-        border-radius: 18px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        padding-right: 16px;
+        padding-left: 16px;
+        border-radius: 50px;
         font-weight: bold;
         font-size: 15px;
         cursor: pointer;
         transition: box-shadow 0.15s;
+        vertical-align: top;
     }
     
     .tweet_button:hover {
