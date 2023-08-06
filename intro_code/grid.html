@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grid Practice</title>
+    </head>
+    <body style="padding-bottom: 500px;"> 
+        <!--this is how to create a css grid-->
+        <div style="
+                display: grid;
+                grid-template-columns: 100px 100px; 
+            "> <!--grid of 2 columns 100px wide each-->
+            <div style="background-color: lightblue;">  <!--this is called inline style for css-->
+                div 1
+            </div>
+            <div style="background-color: lightpink;">
+                div 2
+                <p>
+                    text
+                </p>
+            </div>
+        </div>
+
+        <div style="
+                margin-top: 30px;
+                display: grid;
+                grid-template-columns: 100px 100px 200px; 
+            "> <!--grid of 2 columns 100px wide each-->
+            <div style="background-color: lightblue;">  <!--this is called inline style for css-->
+                100px
+            </div>
+            <div style="background-color: lightpink;">
+                100px
+                <p>
+                    text
+                </p>
+            </div>
+            <div style="background-color: lightblue;">  <!--this is called inline style for css-->
+                200px
+            </div>
+            <div style="background-color: lightpink;">
+                100px
+            </div>
+        </div>
+
+        <div style="
+                margin-top: 30px;
+                display: grid;
+                grid-template-columns: 100px 1fr; 
+            "> <!--grid of 2 columns, fr=free space-->
+            <div style="background-color: lightblue;">  <!--this is called inline style for css-->
+                100px
+            </div>
+            <div style="background-color: lightpink;">
+                1fr
+            </div>
+        </div>
+
+        <div style="
+                margin-top: 30px;
+                display: grid;
+                grid-template-columns: 100px 1fr 2fr; 
+            "> <!--grid of 2 columns, fr=free space, if multiple fr's, we can think of it as a ratio for how much fr each take-->
+            <div style="background-color: lightblue;">  <!--this is called inline style for css-->
+                100px
+            </div>
+            <div style="background-color: lightpink;">
+                1fr
+            </div>
+            <div style="background-color: lightblue;">  <!--this is called inline style for css-->
+                2fr
+            </div>
+        </div>
+
+        <div style="
+                margin-top: 30px;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr; 
+                column-gap: 20px;
+                row-gap: 40px;
+            "> <!--grid of 2 columns, fr=free space, if multiple fr's, we can think of it as a ratio for how much fr each take-->
+            <div style="background-color: lightblue; height: 200px;">  <!--this is called inline style for css-->
+                1fr
+            </div>
+            <div style="background-color: lightpink; height: 200px;">
+                1fr
+            </div>
+            <div style="background-color: lightblue; height: 200px;">  <!--this is called inline style for css-->
+                1fr
+            </div>
+            <div style="background-color: lightpink; height: 200px;">
+                1fr
+            </div>
+            <div style="background-color: lightblue; height: 200px;">  <!--this is called inline style for css-->
+                1fr
+            </div>
+            <div style="background-color: lightpink; height: 200px;">
+                1fr
+            </div>
+        </div>
+    </body>
+</html>
